@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+          http://www.springframework.org/schema/beans/spring-beans.xsd
+          http://www.springframework.org/schema/context
+          http://www.springframework.org/schema/context/spring-context.xsd">
+       
+       
+       <bean id="dcard" class="di.DebitCard" autowire="constructor"/>
+       
+		<bean id="add" class="di.Address">
+		   <constructor-arg type = "String" value = "Snapdeal"/>
+		   <constructor-arg type = "String" value = "Bangalore"/>
+		 </bean>
+		 
+		  <bean id="add2" class="di.Address">
+		   <constructor-arg type = "String" value = "Amazon"/>
+		   <constructor-arg type = "String" value = "USA"/>
+		 </bean>
+		 
+		 <bean id="address" class="di.Address">
+		   <constructor-arg type = "String" value = "Microsoft"/>
+		   <constructor-arg type = "String" value = "USA"/>
+		 </bean>         
+		          
+ </beans>

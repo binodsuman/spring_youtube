@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+ <bean id="log" class="di.LogMessage" init-method="init" destroy-method="destroy">
+    <property name="message" value = "Hello Learner"/>
+ </bean>
+ 
+  <bean id="log2" class="di.LogMessage2">
+    <property name="message" value = "Hello Snapdeal"/>
+  </bean>
+  
+  <bean id="log3" class="di.LogMessage3">
+  <property name="message" value = "Hello Snapdeal from Annotiation"/>
+ </bean>
+ 
+  <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>
+ 
+ 
+ </beans>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="uni" class="di.University">
+	  <property name="subject1" value = "Computer Architecture"/>
+	  <property name="subject2" value = "Operating System"/>
+    </bean>
+	
+	<bean id="col" class="di.College" parent="uni">
+	  <property name="subject2" value = "Database"/>
+	  <property name="subject3" value = "Java"/>
+	  <property name="subject4" value = "Spring"/>
+    </bean>
+
+
+	
+</beans>	
+	
